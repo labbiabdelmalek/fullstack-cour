@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fullstack Course</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">MyLogo</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+
+        <a href="#" class="btn btn-outline-dark">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <h1 class="fw-bold mb-3">مرحبا! هادي أول صفحة فـ Full Stack</h1>
+          <p class="mb-4">غادي نتعلمو Full Stack خطوة بخطوة وبالدارجة.</p>
+
+          <a href="#" id="startBtn" class="btn btn-dark me-2">ابدأ الآن</a>
+          <a href="#" class="btn btn-outline-dark">شوف المزيد</a>
+        </div>
+
+        <div class="col-md-6">
+          <div class="hero-box rounded-4 p-5 text-center">
+            Image / Illustration
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4">خدماتنا</h2>
+
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Service 1</h5>
+              <p class="card-text">وصف قصير للخدمة الأولى.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Service 2</h5>
+              <p class="card-text">وصف قصير للخدمة الثانية.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Service 3</h5>
+              <p class="card-text">وصف قصير للخدمة الثالثة.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TODO APP -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4">ToDo App</h2>
+
+      <div class="row g-2 mb-3">
+        <div class="col-md-8">
+          <input type="text" id="taskInput" class="form-control" placeholder="دخل المهمة">
+        </div>
+        <div class="col-md-4">
+          <button id="addTaskBtn" class="btn btn-primary w-100">إضافة</button>
+        </div>
+      </div>
+
+      <ul id="taskList" class="list-group"></ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4">تواصل معنا</h2>
+
+      <form id="contactForm" class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label">الاسم الكامل</label>
+          <input type="text" class="form-control" required>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">البريد الإلكتروني</label>
+          <input type="email" class="form-control" required>
+        </div>
+
+        <div class="col-12">
+          <label class="form-label">الموضوع</label>
+          <input type="text" class="form-control" required>
+        </div>
+
+        <div class="col-12">
+          <label class="form-label">الرسالة</label>
+          <textarea class="form-control" rows="4" required></textarea>
+        </div>
+
+        <div class="col-12">
+          <button class="btn btn-dark" type="submit">إرسال</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 border-top">
+    <div class="container d-flex flex-wrap justify-content-between">
+      <span>© 2026 - Fullstack Course</span>
+      <span>contact@example.com</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
